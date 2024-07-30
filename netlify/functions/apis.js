@@ -83,7 +83,7 @@ exports.handler = async (event, context) => {
           headers: {
             'Access-Control-Allow-Origin': '*'
           },
-          body: JSON.stringify({ message: 'Internal Server Error', error: error.message })
+          body: JSON.stringify({ message: 'Internal Server Error', error: error.message,fullUrl :fullUrl,token:token  })
         };
       }
     }
